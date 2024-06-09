@@ -129,8 +129,8 @@ a:hover {
 }
 
 #icons img {
-    width: 170px;
-    height: 80px;
+    width: 50%;
+    height: 9vh;
 }
 
 .container {
@@ -140,6 +140,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 .navmob {
@@ -153,17 +154,17 @@ a:hover {
 
 section {
     background-color: white;
-    height: 20vh;
+    height: 25vh;
     width: 80%;
     border-bottom: 2px solid rgb(212, 212, 212);
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 section img {
     width: 20%;
-    height: 20vh;
+    height: 17vh;
     border-bottom: 2px solid rgb(212, 212, 212);
     margin-left: 1%;
 }
