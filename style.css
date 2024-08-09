@@ -273,7 +273,7 @@ footer {
         background: none;
 
     }
-    .itens {
+    #itens {
         display: none;
     }
     .navmob ul li, a {
