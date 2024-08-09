@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <menu>
@@ -33,52 +34,52 @@
             </div>
         </header>
         <div class="navmob">
-            <ul>
+            <button onclick="menu()"><img src="menu_white_36dp.svg" alt=""></button>
+            <ul id="itens">
                 <li><a href="">Home</a></li>
                 <li><a href="">Favoritos</a></li>
                 <li><a href="">Suporte</a></li>
                 <li><a href="">Sobre Nós</a></li>
             </ul>
         </div>
+
         <div class="container">
-            <div class="h2cont">
-            <h2>FAVORITOS</h2>
-        </div>
-            <section>
-                <img src="arroz.webp" alt="">
-                <div class="text">
-                    <li>Câmera Ip Icsee Hd 1080p Com Cartão De Memória 64gb.</li>
-                    <div>
-                        <h4 style="text-decoration: line-through;">R$ 299,90</h4>
-                        <h1>R$ 252,90</h1>
-                    </div>
-                    <button class="btnExc">Excluir</button>
+            <div class="divsec">
+                <div class="divorg">
+                <h2>FAVORITOS</h2>
                 </div>
-            </section>
-            <section>
-                <img src="arroz.webp" alt="">
-                <div class="text">
-                    <li>Fechadura Digital de Embutir Intelbras FR320.</li>
-                    <div>
-                        <h4 style="text-decoration: line-through;">R$ 1.150,00</h4>
-                        <h1>R$ 899,00</h1>
+                <section>
+                    <div class="secdiv">
+                        <img src="menu_white_36dp.svg" alt="">
                     </div>
-                    <button class="btnExc">Excluir</button>
-                </div>
-            </section>
-            <section>
-                <img src="arroz.webp" alt="">
-                <div class="text">
-                    <li>Lâmpada Inteligente Smart Color 10W Elgin RGB Wifi Compatível com Alexa e Google Home.</li>
-                    <div>
-                        <h4 style="text-decoration: line-through;">R$ 49,90</h4>
-                        <h1>R$ 39,57</h1>
+                    <div class="secdiv-text">
+                        <h2>Câmera Ip Icsee Hd 1080p Com Cartão De Memória 64gb.</h2>
+                        <ul>
+                            <h4 style="text-decoration: line-through;">R$ 299,90</h4>
+                            <h1>R$ 252,90</h1>
+                        </ul>
+                        <h2 style="cursor: pointer; color: #184DAB;">Excluir</h2>
                     </div>
-                    <button class="btnExc">Excluir</button>
+                </section>
+                <section>
+                    <div class="secdiv">
+                        <img src="menu_white_36dp.svg" alt="">
+                    </div>
+                    <div class="secdiv-text">
+                        <h2>Câmera Ip Icsee Hd 1080p Com Cartão De Memória 64gb.</h2>
+                        <ul>
+                            <h4 style="text-decoration: line-through;">R$ 299,90</h4>
+                            <h1>R$ 252,90</h1>
+                        </ul>
+                        <h2 style="cursor: pointer; color: #184DAB;">Excluir</h2>
+                    </div>
+                </section>
+                <div class="divorg">
                 </div>
-            </section>
+            </div>
            
         </div>
+
         <footer class="pc">
             <li>© 2024 Smart Comfort. Todos os direitos reservados. Desenvolvido por Sapphire Code.</li>
         </footer>

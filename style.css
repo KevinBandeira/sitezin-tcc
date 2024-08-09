@@ -24,7 +24,7 @@ header {
 
 .icons {
     width: 20%;
-    background-color: rgb(0, 174, 255);
+    background-color: #9DC6EA;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@ header {
 
 
 nav {
-    background-color: rgb(0, 174, 255);
+    background-color: #9DC6EA;
     width: 60%;
     height: 10vh;
     display: flex;
@@ -99,7 +99,7 @@ nav ul li a {
 }
 
 a:hover {
-    color: blue;
+    color: #184DAB;
 }
 .icons {
     display: flex;
@@ -135,60 +135,63 @@ a:hover {
 
 .container {
     background-color: rgb(212, 212, 212);
-    height: 84vh;
+    min-height: 84vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.divsec {
+    width: 80%;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
 }
 
-.navmob {
-    display: none;
-}
-
-.h2cont {
-    width: 80%;
-    margin-bottom: 1.3%;
-}
-
-section {
-    background-color: white;
-    height: 25vh;
-    width: 80%;
-    border-bottom: 2px solid rgb(212, 212, 212);
+.divorg {
+    height: 10vh;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
-section img {
-    width: 20%;
-    height: 17vh;
-    border-bottom: 2px solid rgb(212, 212, 212);
-    margin-left: 1%;
-}
 
-.text {
+
+.divsec section {
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    border-radius: 5px;
 }
 
-section div li {
-    font-size: 25px;
-    list-style-type: none;
-    
+.secdiv {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
 }
 
-.btnExc {
-    font-size: 25px;
-    width: 82px;
-    height: 30px;
-    color: blue;
-    background: none;
-    border: none;
-    cursor: pointer;
+.secdiv img {
+    min-width: 65%;
+    max-width: 80%;
+    background-color: black;
+    height: auto;
+}
+
+.secdiv-text {
+    width: 75%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 footer {
@@ -196,7 +199,7 @@ footer {
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    background-color: blue;
+    background-color: #184DAB;
     height: 6vh;
     color: white;
     font-size: 18px;
@@ -205,36 +208,27 @@ footer {
     display: none;
 }
 
-  
-@media only screen and (max-width: 1200px) {
-    section {
-        width: 85%;
-        height: 22vh;
-        text-align: center;
-    }
-
-    .text {
-        gap: 10px;
-    }
-    .text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        width: 100%;
-    }
-    .container {
-        gap: 15px;
-    }
-
-    
+.navmob {
+    display: none;
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-height:750px) {
+    .secdiv-text {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width:750px) {
 
     .mob {
         display: block;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
     }
     .pc {
         display: none;
@@ -275,17 +269,18 @@ footer {
 
     }
     .navmob {
-        display: block;
+       display: block;
         background: none;
+
+    }
+    .itens {
+        display: none;
     }
     .navmob ul li, a {
         text-align: center;
-        background-color: aqua;
         text-decoration: none;
-        color: black;
         font-size: 25px;
         width: 100%;
-       
     }
     .navmob ul li {
         border-top: 1px solid rgb(167, 167, 167);
@@ -293,69 +288,67 @@ footer {
     .navmob ul li a {
         display: inline-block;
         text-align: center;
-        background-color: rgb(0, 174, 255);
+        background-color: #9DC6EA;
         text-decoration: none;
         color: black;
         font-size: 25px;
         width: 100%;
     }
     .navmob ul li a:hover {
-        color: blue;
-        background-color: rgb(167, 167, 167);
+        color: #184DAB;
     }
 
-    section {
+    .navmob button {
         width: 100%;
-        height: 38vh;
-        text-align: center;
-    } 
+        height: 4vh;
+        color: black;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #9DC6EA;
+        border: none;
+        border-top: 1px solid rgb(167, 167, 167);
+    }
+    .navmob button img {
+        color: black;
+        cursor: pointer;
+    }
+    
+    .divsec {
+        width: 100%;
+    }
 
-    section img {
-        height: 12vh;
+    .divsec section {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .secdiv {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15vh;
+    }
+    
+    .secdiv img {
         width: 60%;
     }
-
-    .container {
-        gap: 25px;
-        height: 130vh;
-    }
-
-    .h2cont {
-        text-align: center;
-    }
-    .text {
-        gap: 15px;
-    }
-    .text li {
-        font-size: 20px;
-    }
-
-    .text div h4 {
-        font-size: 15px;
-    }
-    .text div h1 {
-        font-size: 20px;
-    }
-    .mob {
+    
+    .secdiv-text {
+        width: 100%;
+        height: 25vh;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 9vh;
+        gap: 20px;
     }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
 }
 
 
